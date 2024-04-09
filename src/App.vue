@@ -37,6 +37,7 @@ const drawDay = async (id) => {
   const zipData = _.zip(data.hourly.time, data.hourly.temperature_2m);
   const chankData = _.chunk(zipData, 24);
   dayArray.value = chankData;
+  weatherArray.value = [];
 };
 
 const drawWeather = (day) => {
